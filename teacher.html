@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+
+<h1>👩‍🏫 Teacher Dashboard</h1>
+
+<form method="POST">
+
+    <input type="text" name="username" placeholder="Username" required>
+
+    <input type="password" name="password" placeholder="Password" required>
+
+    <input type="text" name="name" placeholder="Student Name" required>
+
+    <input type="text" name="skill" placeholder="Skill" required>
+
+    <input type="number" name="marks" placeholder="Marks" required>
+
+    <button type="submit">Add Student</button>
+
+</form>
+
+<br>
+
+<a href="/">⬅ Back to Home</a>
+
+</div>
+
+</body>
+</html> 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="dashboard">
+
+<h1>📘 Student Dashboard</h1>
+
+<div class="profile">
+
+    <h2>{{ student[3] }}</h2>
+
+    <p><strong>Skill:</strong> {{ student[4] }}</p>
+
+    <p><strong>Marks:</strong> {{ student[5] }}</p>
+
+</div>
+
+<div class="progress-box">
+
+    <h3>Performance</h3>
+
+    <progress value="{{ student[5] }}" max="100"></progress>
+
+    <p>{{ student[5] }}%</p>
+
+</div>
+
+<br>
+
+<a href="/logout" class="btn">Logout</a>
+
+</div>
+
+</body>
+</html> 
